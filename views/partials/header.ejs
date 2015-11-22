@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- Custom CSS -->
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <nav id="bs-navbar" class="collapse navbar-collapse">
+    <div class="container-fluid">
+        
+        <ul class="nav navbar-nav navbar-right">
+          <% if(title == "Home" ) { %>
+            <li class="active">
+          <% } else { %>
+          <li>
+            <% } %>
+            <a href="/">Home</a></li>
+          <li role="separator" class="divider"></li>
+          <% if (displayName) { %>
+            <% if(title == "Users" ) { %>
+            <li class="active">
+              <% } else { %>
+            <li>
+              <% } %>
+              <a href="/users">Users</a></li>
+            <li class="navbar-text">Hello,
+              <%= displayName %>
+            </li>
+            <li><a href="/logout">Logout</a></li>
+            <% } else  { %>
+              <% if(title == "About" ) { %>
+            <li class="active">
+            <% } else { %>
+            <li>
+            <% } %>
+                <a href="/about">About</a></li>
+                }else { %>
+              <% if(title == "Services" ) { %>
+            <li class="active">
+            <% } else { %>
+            <li>
+            <% } %>
+                <a href="/services">Services</a></li>
+                }else { %>
+              <% if(title == "Projects" ) { %>
+            <li class="active">
+            <% } else { %>
+            <li>
+            <% } %>
+                <a href="/projects">Projects</a></li>
+                }else { %>
+              <% if(title == "Contact" ) { %>
+            <li class="active">
+            <% } else { %>
+            <li>
+            <% } %>
+                <a href="/contact">Contact</a></li>
+            } else { %>
+              <% if(title == "Register" ) { %>
+            <li class="active">
+            <% } else { %>
+            <li>
+            <% } %>
+                <a href="/register">Register</a></li>
+              <% if(title == "Login" ) { %>
+            <li class="active">
+            <% } else { %>
+            <li>
+            <% } %>
+                <a href="/login">Login</a></li>
+              <% } %>
+        </ul> <!-- nav navbar-nav navbar-right -->
+      </div> <!-- collapse navbar-collapse -->
+    </div> <!-- container-fluid -->
+  </nav> <!-- navbar navbar-inverse -->

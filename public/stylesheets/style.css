@@ -1,0 +1,86 @@
+#bs-navbar{
+    font: 16px fantasy, Helvetica, Arial, sans-serif black bold;
+    padding: 20px;
+    background-color: pink;
+    border: 1px solid black;
+    opacity: 0.7;
+    filter: alpha(opacity=60);
+}
+a {
+  color: black;
+}
+#about a[href="#"] {
+    display: block;
+    text-align: center;
+    margin: 15% auto;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid #333333;
+    color: #333333 !important;
+    width: 30%;
+}
+h1{
+    font: 36px fantasy, Helvetica, Arial, sans-serif black bold;
+    padding: 30px;
+    background-color: pink;
+    border: 1px solid black;
+    opacity: 0.7;
+    filter: alpha(opacity=60);
+}
+body {
+    padding: 50px;
+    font: 14px fantasy, Helvetica, Arial, sans-serif black bold;
+    background: url("../images/desk.jpg") no-repeat center center fixed;
+    background-size: cover;   
+}
+#text-box{
+    padding: 50px;
+    font: 14px fantasy, Helvetica, Arial, sans-serif black bold;
+    background-color: pink;
+    border: 1px solid black;
+    opacity: 0.9;
+    filter: alpha(opacity=60);   
+}
+#text-box1{
+    box-sizing: border-box;
+    padding-left:10px;
+    width: 50%;
+    font: 14px fantasy, Helvetica, Arial, sans-serif black bold;
+    background-color: pink;
+    border: 1px solid black;
+    border-width: 250;
+    opacity: 0.9;
+    filter: alpha(opacity=60);   
+}
+#hidden info {
+    visibility: hidden
+}
+#text-box2{
+    padding: 50px;
+    width:500px;
+    font: 14px fantasy, Helvetica, Arial, sans-serif black bold;
+    background-color: pink;
+    border: 1px solid black;
+    opacity: 0.9;
+    filter: alpha(opacity=60);
+}
+#text-box3{
+    box-sizing: border-box;
+    width: 50%;
+    font: 14px fantasy, Helvetica, Arial, sans-serif black bold;
+    background-color: pink;
+    border: 1px solid black;
+    border-width: 250;
+    opacity: 0.9;
+    filter: alpha(opacity=60);   
+}
+#pic{
+ border: 1px solid black;
+    padding:inherit;
+}
+
+footer{
+    clear: both;
+}
+
+
