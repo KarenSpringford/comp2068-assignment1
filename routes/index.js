@@ -85,8 +85,8 @@ router.get('/login', function (req, res, next) {
 
 /* Process the Login Request */
 router.post('/login', passport.authenticate('local-login', {
-    successRedirect: '/users',
-    failureRedirect: '/login',
+    successRedirect: '/views/users',
+    failureRedirect: '/views/login',
     failureFlash: true
 }));
 
@@ -100,7 +100,7 @@ router.get('/register', function (req, res, next) {
         });
     }
     else {
-        return res.redirect('/');
+        return res.redirect('/users');
     }
 });
 
