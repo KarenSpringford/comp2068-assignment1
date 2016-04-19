@@ -71,12 +71,17 @@ body {
     background: url("../images/background.jpg") no-repeat center center fixed cover;
     width: 65%;
     padding: 5%;  
+    
 }
 #text-box5B{ 
     background: url("../images/girlskull.jpg") repeat 25%;  
     width: 65%;
     padding: 5%;
+    font-weight: bold;
+    outline-color: pink;
 }
+
+
 
 .cube, .wiring{
     border: snow solid 3px;
@@ -85,6 +90,10 @@ body {
     padding:1.5%;
     margin: 1%;
     position: relative;
+}
+iframe{
+    display:block;
+    margin: 0 auto;
 }
 
 footer{
