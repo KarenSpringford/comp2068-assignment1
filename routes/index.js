@@ -68,6 +68,20 @@ router.get('/contact', function (req, res, next) {
     }
 });
 
+/*Render CoOp page. */
+router.get('/coop', function (req, res, next){
+    if(!req.user){
+        res.render('coop', {
+            title: 'CoOp',
+            messages: req.flash('loginMessage'),
+            displayName: req.user ? req.user.displayName :''
+        });
+    }
+    else{
+        return res.redirect('/users');
+    }
+});
+
 
 /* Render Login page. */
 router.get('/login', function (req, res, next) {
