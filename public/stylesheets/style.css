@@ -58,6 +58,9 @@ body {
     visibility: hidden
 }
 #text-box2, #text-box3, #text-box4, #text-box5{
+    box-sizing: border-box;
+    margin: 2%;
+    padding-left: 1%;
     padding: 5%;
     width:65%;
     font: .7em tahoma, Helvetica, Arial, sans-serif black bold;
@@ -68,20 +71,20 @@ body {
 }
 
 #text-box5A{
+    box-sizing: border-box;
     background: url("../images/background.jpg") no-repeat center center fixed cover;
     width: 65%;
     padding: 5%;  
     
 }
 #text-box5B{ 
+    box-sizing: border-box;
     background: url("../images/girlskull.jpg") repeat 25%;  
     width: 65%;
     padding: 5%;
     font-weight: bold;
     outline-color: pink;
 }
-
-
 
 .cube, .wiring{
     border: snow solid 3px;
